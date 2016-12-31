@@ -58,9 +58,12 @@ body {
 }
 .picture {
   position: relative;
+  overflow:hidden;
 }
 .picture img {
   width: 100%;
+  -webkit-transition:all .4s linear;
+  transition:all .4s linear;
 }
 .picture .overlay {
   width: 100%;
@@ -73,6 +76,11 @@ body {
 }
 .picture .overlay:hover {
   opacity: 1;
+}
+.picture:hover>img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .picture .overlay .button {
   position: absolute;
