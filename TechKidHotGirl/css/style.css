@@ -39,7 +39,7 @@ body {
   text-align: center;
   color: #cecece;
   border: none;
-  background: white;
+  background: #ffffff;
   border-right: 1px solid #cecece;
 }
 .profile_wrapper button:hover{
@@ -71,7 +71,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   display: none;
 }
 .image_container:hover .overlay{
@@ -102,16 +102,16 @@ body {
   line-height: 30px;
   font-size: 2em;
   background: transparent;
-  color: #ffffff;
+  color: #cecece;
   border: 0 none;
   cursor: pointer;
 }
-button .glyphicon {
+button.on_overlay .glyphicon {
   left: 2px;
   top: 2px;
 }
-.plus_button:hover {
-  color: #333333;
+.plus_button.on_overlay:hover {
+  color: #ffffff;
   background: #cecece;
 }
 
@@ -124,48 +124,52 @@ button .glyphicon {
 }
 
 
-.modal-content {
-  border-radius: 20px;
-  width: 42%;
-  margin-top: 10px;
-  min-width: 300px;
-}
-.plus_button_modal {
-  margin: 25px;
-  height: 40px;
-  width: 40px;
-  line-height: 30px;
-  font-size: 2em;
-  background: transparent;
-  color: #cecece;
-  border: 0 none;
-  cursor: pointer;
-  float: left;
-}
-.plus_button_modal:hover {
-  background: #cecece;
-  color: #ffffff;
-}
-.img_statistics_container_modal {
-  color: #cecece;
+.item_modal_statistic>div {
+  max-width: 70px;
+  padding: 0 5px;
   display: inline-block;
-  float: right;
-  padding-top: 25px;
 }
-.image_modal {
-  width: 95%;
-  margin-left: 13px;
+.author_avatar.author_avatar_big {
+  width: 130px;
+  height: 130px;
 }
-.avatar_big {
-  width: 80px;
-  height: 80px;
+
+
+
+.loading {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
-.text_muted {
-  color: #cecece;
+.loading .part {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 40px 25px 25px 25px;
+  border-radius: 100%;
+  animation: loader 600ms infinite;
 }
-.modal-content .info_container>p {
-  padding-top: 10px;
+.loading .liner {
+  margin-top: 35px;
+  background: #848484;
 }
-.comment_container>p {
-  margin-left: 65px;
+.loading .part:nth-child(2) {
+  animation-delay: 0ms;
+}
+.loading .part:nth-child(3) {
+  animation-delay: 150ms;
+}
+.loading .part:nth-child(4) {
+  animation-delay: 300ms;
+}
+@keyframes loader {
+  0% {bottom: 15px; background: #848484;}
+  16.667% {bottom: 10px; background: #6E6E6E;}
+  33.333% {bottom: 5px; background: #6E6E6E;}
+  50% {top: 0px; background: #585858;}
+  66.666% {bottom: 5px; background: #424242;}
+  75% {bottom: 10px; background: #424242;}
+  100% {bottom: 15px; background: #2e2e2e;}
 }
