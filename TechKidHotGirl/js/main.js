@@ -38,15 +38,15 @@ $(document).ready(function(){
 
   $(window).on('scroll', function(){
     if(isRequestingNextPage) return;
-    if($(window).scrollTop() + window.innerHeight > $(document).height() - 100){
+    if($(window).scrollTop() + window.innerHeight > $(document).height() -100){
       document.getElementById("loading_container").style.display = 'flex';
       setTimeout(function(){
         requestNextPage(itemTemplate);
       }, 4000);
       isRequestingNextPage = true;
+	  
     }
   });
-
 });
 
 
@@ -71,5 +71,6 @@ function requestNextPage(itemTemplate){
     console.log("Error: " + error);
   }).always(function(){
     isRequestingNextPage = false;
+	document.getElementById("loading_container").style.display = 'none';
   });
 }
