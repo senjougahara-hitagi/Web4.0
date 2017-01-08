@@ -47,92 +47,94 @@
 
 			<script id="item-template" type="text/x-handlebars-template">
 				{{#each items}} <!-- Day la mot vong for trong bien items-->
-				<div class="col-md-3 col-sm-6 item_container">
-					<div class="item">
-						<div class="image_container">
-							<img src="{{imageUrl}}">
-							<div class="overlay">
-								<button type="button" class="plus_button" data-toggle="modal" data-target="#{{myModal}}">
-									<span class="glyphicon glyphicon-plus"></span>
-								</button>
-								<div class="img_statistics_container">
-									<div class="row text-center">
-										<div class="col-xs-4">
-											<span class="glyphicon glyphicon-eye-open">
-											</span>
-											<p>{{view}}</p>
-										</div>
-										<div class="col-xs-4">
-											<span class="glyphicon glyphicon-time">
-											</span>
-											<p>{{date}}</p>
-										</div>
-										<div class="col-xs-4">
-											<span class="glyphicon glyphicon-plus">
-											</span>
-											<p>{{plus}}</p>
+				<div><div>
+					<div class="col-md-3 col-sm-6 item_container">
+						<div class="item">
+							<div class="image_container">
+								<img src="{{imageUrl}}">
+								<div class="overlay">
+									<button type="button" class="plus_button" data-toggle="modal" data-target="#{{myModal}}">
+										<span class="glyphicon glyphicon-plus"></span>
+									</button>
+									<div class="img_statistics_container">
+										<div class="row text-center">
+											<div class="col-xs-4">
+												<span class="glyphicon glyphicon-eye-open">
+												</span>
+												<p>{{view}}</p>
+											</div>
+											<div class="col-xs-4">
+												<span class="glyphicon glyphicon-time">
+												</span>
+												<p>{{date}}</p>
+											</div>
+											<div class="col-xs-4">
+												<span class="glyphicon glyphicon-plus">
+												</span>
+												<p class="num_on_overlay">{{plus}}</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="info_container">
-							<div class="author_info">
-								<img src="{{posterAvatar}}" class="author_avatar">
-								<h3>{{posterName}}</h3>
-								<p class="text_muted">{{posterTitle}}</p>
+							<div class="info_container">
+								<div class="author_info">
+									<img src="{{posterAvatar}}" class="author_avatar">
+									<h3>{{posterName}}</h3>
+									<p class="text_muted">{{posterTitle}}</p>
+								</div>
+								<p>{{content}}</p>
 							</div>
-							<p>{{content}}</p>
 						</div>
 					</div>
-				</div>
 
 
-				<div class="modal fade" role="dialog" id="{{myModal}}">
-					<div class="modal-content container">
-						<div class="row text-center">
-							<button type="button" class="plus_button_modal">
-								<span class="glyphicon glyphicon-plus">
-								</span>
-							</button>
+					<div class="modal fade" role="dialog" id="{{myModal}}">
+						<div class="modal-content container">
+							<div class="row text-center">
+								<button type="button" class="plus_button_modal">
+									<span class="glyphicon glyphicon-plus">
+									</span>
+								</button>
 
-							<div class="img_statistics_container_modal row text-center col-xs-9">
-								<div class="col-xs-4">
-									<span class="glyphicon glyphicon-eye-open"></span>
-									<p>{{view}}</p>
-								</div>
-								<div class="col-xs-4">
-									<span class="glyphicon glyphicon-time"></span>
-									<p>{{date}}</p>
-								</div>
-								<div class="col-xs-4">
-									<span class="glyphicon glyphicon-plus"></span>
-									<p>{{plus}}</p>
+								<div class="img_statistics_container_modal row text-center col-xs-9">
+									<div class="col-xs-4">
+										<span class="glyphicon glyphicon-eye-open"></span>
+										<p>{{view}}</p>
+									</div>
+									<div class="col-xs-4">
+										<span class="glyphicon glyphicon-time"></span>
+										<p>{{date}}</p>
+									</div>
+									<div class="col-xs-4">
+										<span class="glyphicon glyphicon-plus"></span>
+										<p class="number">{{plus}}</p>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<img src="{{imageUrl}}" class="image_modal">
+							<img src="{{imageUrl}}" class="image_modal">
 
-						<div class="info_container">
-							<div class="author_info">
-								<img src="{{posterAvatar}}" class="author_avatar avatar_big">
-								<h3>{{posterName}}</h3>
-								<h3 class="text_muted">{{posterTitle}}</h3>
+							<div class="info_container">
+								<div class="author_info">
+									<img src="{{posterAvatar}}" class="author_avatar avatar_big">
+									<h3>{{posterName}}</h3>
+									<h3 class="text_muted">{{posterTitle}}</h3>
+								</div>
+								<p>{{content}}</p>
 							</div>
-							<p>{{content}}</p>
-						</div>
-						<hr>
-						<div class="comment_container">
-							<div class="author_info">
-								<img src="{{posterAvatar}}" class="author_avatar avatar_small">
-								<h4>Bach Le</h4>
+							<hr>
+							<div class="comment_container">
+								<div class="author_info">
+									<img src="{{posterAvatar}}" class="author_avatar avatar_small">
+									<h4>Bach Le</h4>
+								</div>
+								<p>{{content}}</p>
 							</div>
-							<p>{{content}}</p>
 						</div>
 					</div>
-				</div>
+				</div></div>
 				{{/each}}
 			</script>
 
