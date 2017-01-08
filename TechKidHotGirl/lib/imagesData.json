@@ -1,6 +1,7 @@
 {
   "items" : [
     {
+      "id"            : 0,
       "imageUrl"      : "http://www.vatcss.info/TechKidsGirls/1.png",
       "view"          : 857,
       "date"          : "07/05/12",
@@ -11,6 +12,7 @@
       "content"       : "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores."
     },
     {
+      "id"            : 1,
       "imageUrl"      : "http://www.vatcss.info/TechKidsGirls/3.png",
       "view"          : 857,
       "date"          : "07/05/12",
@@ -21,6 +23,7 @@
       "content"       : "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores."
     },
     {
+      "id"            : 2,
       "imageUrl"      : "http://www.vatcss.info/TechKidsGirls/2.png",
       "view"          : 857,
       "date"          : "07/05/12",
@@ -31,6 +34,7 @@
       "content"       : "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores."
     },
     {
+      "id"            : 3,
       "imageUrl"      : "http://www.vatcss.info/TechKidsGirls/4.png",
       "view"          : 857,
       "date"          : "07/05/12",
@@ -41,6 +45,7 @@
       "content"       : "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores."
     },
     {
+      "id"            : 4,
       "imageUrl"      : "http://www.vatcss.info/TechKidsGirls/1.png",
       "view"          : 857,
       "date"          : "07/05/12",
@@ -51,6 +56,7 @@
       "content"       : "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores."
     },
     {
+      "id"            : 5,
       "imageUrl"      : "http://www.vatcss.info/TechKidsGirls/3.png",
       "view"          : 857,
       "date"          : "07/05/12",
@@ -61,6 +67,7 @@
       "content"       : "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores."
     },
     {
+      "id"            : 6,
       "imageUrl"      : "http://www.vatcss.info/TechKidsGirls/2.png",
       "view"          : 857,
       "date"          : "07/05/12",
@@ -71,6 +78,7 @@
       "content"       : "Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores."
     },
     {
+      "id"            : 7,
       "imageUrl"      : "http://www.vatcss.info/TechKidsGirls/4.png",
       "view"          : 857,
       "date"          : "07/05/12",
