@@ -1,0 +1,17 @@
+{
+  "name": "be_1",
+  "version": "1.0.0",
+  "description": "homework be 1",
+  "main": "app_hw.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "le corp",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^6.6.0"
+  }
+}
